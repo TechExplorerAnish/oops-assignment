@@ -9,6 +9,7 @@ DOB::DOB(int year, int month, int day)
 }
 void DOB::set()
 {
+    std::cout<<"Enter date of birth."<<std::endl;
     std::cout << "Enter year: ";
     std::cin >> year;
     std::cout << "Enter month: ";
