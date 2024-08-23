@@ -21,10 +21,18 @@ This project is a C++ assignment that includes classes for handling
    ```bash
    cd 'problem first'
    g++ -o program main.cpp dob.cpp person.cpp
-   ./program
 2. **Way to execute second problem from terminal**:
    ```bash
    cd 'problem second'
    g++ -o program main.cpp employee.cpp
-   ./program
+3. **Way to execute third problem from terminal**:
+   ```bash
+   cd 'problem third'
+   g++ -o program main.cpp library.cpp book.cpp 
+4. **Way to execute fourth problem from terminal**:
+   ```bash
+   cd 'problem third'
+   g++ -o program main.cpp library.cpp book.cpp 
 
+
+### After compilation in respective directory program.exe file is created simply run that file by entering './program' on terminal.

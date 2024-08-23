@@ -1,63 +1,44 @@
 #include "library.hpp"
-int showMenu(std::string menu[], int size);
-
-bool shouldProgramExit = false;
-
+#include <iostream>
 int main()
 {
+    system("clear");
     int capacity;
     std::cout << "Enter the capacity of the library: ";
     std::cin >> capacity;
     Library library(capacity);
     int choice;
-    std::string menu[] = {"Add a book", "Remove a book", "Return book", "Check if a book is available", "Check if a book is available by title", "Display all books", "Exit"};
-    while (!shouldProgramExit)
+    while (true)
     {
-        choice = showMenu(menu, 7);
+        system("clear");
+        std::cout << "1. Add book\n2. Display books\n3. Search book\n4. Delete book\n5. Return book\n6. Issue book\n7. Exit\n";
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;
         switch (choice)
         {
         case 1:
-            // Add a book
             library.addBook();
             break;
         case 2:
-            // Remove a book
+            library.displayBooks();
             break;
         case 3:
-            // Return book
+            library.searchBook();
             break;
         case 4:
-            // Check if a book is available
+            library.deleteBook();
             break;
         case 5:
-            // Check if a book is available by title
+            library.returnBook();
             break;
         case 6:
-            // Display all books
-            library.display();
+            library.issueBook();
             break;
         case 7:
-            // Exit
-            shouldProgramExit = true;
-            break;
+            return 0;
         default:
-            std::cout << "Invalid choice. Please try again." << std::endl;
-            break;
+            std::cout << "Invalid choice\n";
         }
     }
-
     return 0;
-}
-
-int showMenu(std::string menu[], int size)
-{
-    system("clear");
-    for (int i = 0; i < size; i++)
-    {
-        std::cout << i + 1 << ". " << menu[i] << std::endl;
-    }
-    int choice;
-    std::cout << "Enter your choice: ";
-    std::cin >> choice;
-    return choice;
 }

@@ -1,33 +1,23 @@
 #ifndef BOOK_HPP
 #define BOOK_HPP
 #include <iostream>
-class Book
-{
-private:
+
+class Book{
+    private:
     std::string title;
     std::string author;
     int numberOfCopies;
-    int location;
-
-public:
+    int issued;
+    public:
     Book();
     Book(std::string title, std::string author, int numberOfCopies);
-    std::string getTitle();
-    std::string getAuthor();
-    int getNumberOfCopies();
-    void setTitle(std::string title);
-    void setAuthor(std::string author);
-    void setNumberOfCopies(int numberOfCopies);
+    void set();
     void display();
-    void increaseCopies(int n);
-    void decreaseCopies(int n);
-    Book createBook();
-    void setLocation(int location);
-    int getLocation();
-    bool operator==(const Book &book);
-    bool isAvailable();
-
-    
+    std::string getTitle();
+    void returnBook();
+    void issue();
+    int getNumberOfCopies();
+    int getNumberOfIssued();
 };
 
-#endif // BOOK_HPP
+#endif// BOOK_HPP
