@@ -1,5 +1,8 @@
 # C++ Assignment
-
+   # Author:
+* Name: Anish Ghimire
+* RollNo: PUR080BCT014
+* Group: A
 ## Description
 
 This project is a C++ assignment that includes classes for handling
