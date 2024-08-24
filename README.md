@@ -31,8 +31,8 @@ This project is a C++ assignment that includes classes for handling
    g++ -o program main.cpp library.cpp book.cpp 
 4. **Way to execute fourth problem from terminal**:
    ```bash
-   cd 'problem third'
-   g++ -o program main.cpp library.cpp book.cpp 
+   cd 'problem fourth'
+   g++ -o program main.cpp 
 
 
-### After compilation in respective directory program.exe file is created simply run that file by entering './program' on terminal.
+### After compilation in respective directory program.exe file is created simply run that file by entering './program' on terminalgi.
