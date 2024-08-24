@@ -36,4 +36,4 @@
    g++ -o program main.cpp 
 
 
-### After compilation in respective directory program.exe file is created simply run that file by entering './program' on terminalgi.
+### After compilation in respective directory program.exe file is created simply run that file by entering './program' on terminal.
