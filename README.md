@@ -4,9 +4,7 @@
 * RollNo: PUR080BCT014
 * Group: A
 ## Description
-
-This project is a C++ assignment that includes classes for handling
-
+   This is a simple console based project done with c++ and implement the concept of object oriented programing (oop's).
 ## Prerequisites
 
 - A C++ compiler (e.g., `g++`)
